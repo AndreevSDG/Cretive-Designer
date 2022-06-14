@@ -6,7 +6,7 @@ function slowScroll(id) {
 	return false;
 }
 $(document).ready(function () {
-	//---------------Бургер-меню-------------------------
+	//---------------Burger-Men-------------------------
 	let flagMenu = false;
 	$('.header__burger').click(function () {
 		if (!flagMenu) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
 	$(document).mouseup(function (e) {
 		let lunge = $('#lunge');
 		if (!lunge.is(e.target) && lunge.has(e.target).length === 0) {
-			//Закрытие меню бургер
+			//Closing the Burger menu
 			$('.header__burger--active').css('display', 'none');
 			$('.header__burger-icon').css('display', 'block');
 			$('.header__burger-icon-close').css('display', 'none');
@@ -47,7 +47,7 @@ $(document).ready(function () {
 	});
 	$(document).on('keyup', function (e) {
 		if (e.key == "Escape") {
-			//Закрытие меню бургер
+			//Closing the Burger menu
 			$('.header__burger--active').css('display', 'none');
 			$('.header__burger-icon').css('display', 'block');
 			$('.header__burger-icon-close').css('display', 'none');
